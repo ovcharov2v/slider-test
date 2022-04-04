@@ -1,0 +1,21 @@
+.show-sm-block {
+	display: none !important;
+
+	@media (min-width: $screen-sm) {
+		display: block !important;
+	}
+}
+
+.show-sm-inline-block {
+	display: none !important;
+
+	@media (min-width: $screen-sm) {
+		display: inline-block !important;
+	}
+}
+
+.hide-sm {
+	@media (min-width: $screen-sm) {
+		display: none !important;
+	}
+}

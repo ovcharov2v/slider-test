@@ -1,0 +1,43 @@
+extends pug/base
+
+prepend vars
+	-
+		var title = "Slider page"
+		var description = "Slider page"
+
+
+append vars
+	//-
+
+block content
+	section
+			.slider
+				.slider__cover
+					button.button.button--orange.js-start-demo Начать демонстрацию
+				.swiper-container
+					.swiper-wrapper
+						- var n = 0;
+						while n < 4
+							// Slide
+							.swiper-slide.slide(class="slide--n"+(n+1))
+								.container
+									.slide__box
+										.slide__content
+											h2.slide__title Этот текст добавлен для демонстрации на странице
+											p.slide__period.show-sm-block Акция действует с 01.07.18 по 31.07.18
+											p.slide__text.hide-sm Тест на внимательность
+											.slide__links
+												a.button.button--orange.slide__link(href="#") Подробнее
+												a.button.button--outline-black.slide__link.show-sm-inline-block(href="#") Все акции
+							- n++;
+					.slider__pagination.container
+						.slider__pagination-list
+							//-.slider__slide-link.slide-link.slide-link--current
+								.slide-link__content
+									img.slide-link__thumb(src="images/thumb/slider_1pre.jpg")
+									.slide-link__text
+										p.slide-link__period Акция действует с 01.07.18
+										p.slide-link__title Этот текст добавлен для демонстрации на странице
+					.slider__navigation
+						button.slider__button.slider__button--prev(aria-label="Предыдущий")
+						button.slider__button.slider__button--next(aria-label="Следующий")

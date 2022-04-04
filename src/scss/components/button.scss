@@ -1,0 +1,45 @@
+.button {
+	display: inline-block;
+	padding: 10px 24px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+	font-family: $font-primary;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: border-color $default-transition, color $default-transition, background-color $default-transition;
+
+	@media (min-width: $screen-md) {
+		font-size: 16px;
+		padding: 12px 30px 13px;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	&--orange { // .button--orange
+		background-color: #f09039;
+		border-color: #f09039;
+		color: #fff;
+
+		&:hover {
+			background-color: darken(#f09039, 15%);
+			border-color: darken(#f09039, 15%);
+		}
+	}
+
+	&--outline-black { // .button--outline-black
+		border-color: #212121;
+		background-color: $color-transparent;
+		color: #212121;
+
+		&:hover {
+			background-color: #212121;
+			color: #fff;
+		}
+	}
+}

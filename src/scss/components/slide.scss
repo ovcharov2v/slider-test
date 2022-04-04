@@ -1,0 +1,133 @@
+.slide {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	@media (min-width: $screen-sm) {
+		background-position: 46% center;
+		text-align: left;
+	}
+
+	@media (min-width: 970px) {
+		background-position: 36% center;
+	}
+
+	@media (min-width: $screen-md) {
+		background-position: center center;
+	}
+
+	&--n1 { // .slide--n1
+		background-image: url("../images/slide-bg/slider_1min.jpg");
+
+		@media (min-width: $screen-sm) {
+			background-image: url("../images/slide-bg/slider_1.jpg");
+		}
+	}
+
+	&--n2 { // .slide--n2
+		background-image: url("../images/slide-bg/slider_2min.jpg");
+
+		@media (min-width: $screen-sm) {
+			background-image: url("../images/slide-bg/slider_2.jpg");
+		}
+	}
+
+	&--n3 { // .slide--n3
+		background-image: url("../images/slide-bg/slider_3min.jpg");
+
+		@media (min-width: $screen-sm) {
+			background-image: url("../images/slide-bg/slider_3.jpg");
+		}
+	}
+
+	&--n4 { // .slide--n4
+		background-image: url("../images/slide-bg/slider_4min.jpg");
+
+		@media (min-width: $screen-sm) {
+			background-image: url("../images/slide-bg/slider_4.jpg");
+		}
+	}
+
+	&__box { // .slide__box
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		min-height: 400px;
+
+		@media (min-width: $screen-sm) {
+			min-height: 675px;
+		}
+	}
+
+	&__content { // .slide__content
+		max-width: 346px;
+		margin: 0 auto;
+
+		@media (min-width: $screen-sm) {
+			max-width: 570px;
+			margin: 0;
+		}
+
+		@media (min-width: $screen-md) {
+			max-width: 655px;
+		}
+	}
+
+	&__title { // .slide__title
+		margin-top: 0;
+		margin-bottom: 6px;
+		font-size: 25px;
+		line-height: 30px;
+		font-weight: 400;
+
+		@media (min-width: $screen-sm) {
+			font-size: 35px;
+			line-height: 40px;
+		}
+
+		@media (min-width: $screen-md) {
+			font-size: 42px;
+			line-height: 50px;
+		}
+	}
+
+	&__period { // .slide__period
+		margin-top: 0;
+		margin-bottom: 16px;
+		font-size: 22px;
+		line-height: 40px;
+
+		@media (min-width: $screen-md) {
+			font-size: 26px;
+			line-height: 50px;
+		}
+	}
+
+	&__text { // .slide__text
+		margin-top: 0;
+		margin-bottom: 24px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+
+	&__links { // .slide__links
+		display: flex;
+		justify-content: center;
+		margin: 0 -11px 10px;
+
+		@media (min-width: $screen-sm) {
+			justify-content: flex-start;
+			margin-bottom: 36px;
+		}
+
+		@media (min-width: $screen-md) {
+			margin-bottom: 8px;
+		}
+	}
+
+	&__link { // .slide__link
+		margin: 0 11px;
+	}
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Slider page">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:title" content="Slider page">
+		<meta property="og:description" content="Slider page">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Slider page">
+		<meta name="twitter:description" content="Slider page">
+		<title>Slider page</title>
+		<link rel="stylesheet" href="./css/main.css?v=1649104378823">
+	</head>
+	<body>
+		<section>
+			<div class="slider">
+				<div class="slider__cover">
+					<button class="button button--orange js-start-demo">Начать демонстрацию</button>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<!-- Slide-->
+						<div class="swiper-slide slide slide--n1">
+							<div class="container">
+								<div class="slide__box">
+									<div class="slide__content">
+										<h2 class="slide__title">Этот текст добавлен для демонстрации на странице</h2>
+										<p class="slide__period show-sm-block">Акция действует с 01.07.18 по 31.07.18</p>
+										<p class="slide__text hide-sm">Тест на внимательность</p>
+										<div class="slide__links"><a class="button button--orange slide__link" href="#">Подробнее</a><a class="button button--outline-black slide__link show-sm-inline-block" href="#">Все акции</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide-->
+						<div class="swiper-slide slide slide--n2">
+							<div class="container">
+								<div class="slide__box">
+									<div class="slide__content">
+										<h2 class="slide__title">Этот текст добавлен для демонстрации на странице</h2>
+										<p class="slide__period show-sm-block">Акция действует с 01.07.18 по 31.07.18</p>
+										<p class="slide__text hide-sm">Тест на внимательность</p>
+										<div class="slide__links"><a class="button button--orange slide__link" href="#">Подробнее</a><a class="button button--outline-black slide__link show-sm-inline-block" href="#">Все акции</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide-->
+						<div class="swiper-slide slide slide--n3">
+							<div class="container">
+								<div class="slide__box">
+									<div class="slide__content">
+										<h2 class="slide__title">Этот текст добавлен для демонстрации на странице</h2>
+										<p class="slide__period show-sm-block">Акция действует с 01.07.18 по 31.07.18</p>
+										<p class="slide__text hide-sm">Тест на внимательность</p>
+										<div class="slide__links"><a class="button button--orange slide__link" href="#">Подробнее</a><a class="button button--outline-black slide__link show-sm-inline-block" href="#">Все акции</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide-->
+						<div class="swiper-slide slide slide--n4">
+							<div class="container">
+								<div class="slide__box">
+									<div class="slide__content">
+										<h2 class="slide__title">Этот текст добавлен для демонстрации на странице</h2>
+										<p class="slide__period show-sm-block">Акция действует с 01.07.18 по 31.07.18</p>
+										<p class="slide__text hide-sm">Тест на внимательность</p>
+										<div class="slide__links"><a class="button button--orange slide__link" href="#">Подробнее</a><a class="button button--outline-black slide__link show-sm-inline-block" href="#">Все акции</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__pagination container">
+						<div class="slider__pagination-list"></div>
+					</div>
+					<div class="slider__navigation">
+						<button class="slider__button slider__button--prev" aria-label="Предыдущий"></button>
+						<button class="slider__button slider__button--next" aria-label="Следующий"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			if (!('IntersectionObserver' in window)) {
+				var script = document.createElement("script");
+				script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
+				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+		</script>
+		<script src="./js/vendor.js?v=1649104378823"></script>
+		<script src="./js/main.js?v=1649104378823"></script>
+	</body>
+</html>
